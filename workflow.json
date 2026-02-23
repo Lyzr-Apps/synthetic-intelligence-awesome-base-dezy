@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Message",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "manager_agent",
+      "type": "Agent",
+      "label": "Taskmaster Orchestrator",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "strategic_planner",
+      "type": "Agent",
+      "label": "Strategic Planner Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "knowledge_synthesizer",
+      "type": "Agent",
+      "label": "Knowledge Synthesizer Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "decision_analyst",
+      "type": "Agent",
+      "label": "Decision Analyst Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "creative_solver",
+      "type": "Agent",
+      "label": "Creative Problem Solver Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Unified Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    { "source": "input_node", "target": "manager_agent" },
+    { "source": "manager_agent", "target": "strategic_planner" },
+    { "source": "manager_agent", "target": "knowledge_synthesizer" },
+    { "source": "manager_agent", "target": "decision_analyst" },
+    { "source": "manager_agent", "target": "creative_solver" },
+    { "source": "strategic_planner", "target": "output_node" },
+    { "source": "knowledge_synthesizer", "target": "output_node" },
+    { "source": "decision_analyst", "target": "output_node" },
+    { "source": "creative_solver", "target": "output_node" }
+  ]
+}

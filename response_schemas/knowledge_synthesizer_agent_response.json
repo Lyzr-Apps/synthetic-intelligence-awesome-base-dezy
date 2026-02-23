@@ -1,0 +1,36 @@
+{
+  "agent_name": "Knowledge Synthesizer Agent",
+  "agent_id": "699c462423f6c95dc50e8c8d",
+  "description": "Researches topics in real-time, connects disparate information, and delivers comprehensive yet digestible knowledge summaries with source attribution.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "topic": "string",
+    "summary": "string",
+    "key_concepts": [
+      {
+        "concept": "string",
+        "explanation": "string"
+      }
+    ],
+    "connections": ["string"],
+    "key_takeaways": ["string"],
+    "sources": ["string"],
+    "areas_of_debate": ["string"]
+  },
+  "example_response": {
+    "topic": "Sample topic",
+    "summary": "A comprehensive summary",
+    "key_concepts": [
+      {
+        "concept": "Key concept 1",
+        "explanation": "Detailed explanation"
+      }
+    ],
+    "connections": ["Connection between concepts"],
+    "key_takeaways": ["Important takeaway"],
+    "sources": ["Source 1"],
+    "areas_of_debate": ["Area of uncertainty"]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "agent_name": "Creative Problem Solver Agent",
+  "agent_id": "699c4625889152efca4690d4",
+  "description": "Reframes challenges using lateral thinking techniques, generates novel solutions, applies mental models (first principles, inversion, analogy), and produces creative alternatives to conventional approaches.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "problem_reframe": "string",
+    "assumptions_challenged": ["string"],
+    "mental_models_applied": [
+      {
+        "model_name": "string",
+        "application": "string"
+      }
+    ],
+    "creative_solutions": [
+      {
+        "solution": "string",
+        "rationale": "string",
+        "unconventional_insight": "string"
+      }
+    ],
+    "recommended_experiments": ["string"],
+    "summary": "string"
+  },
+  "example_response": {
+    "problem_reframe": "Looking at the problem differently",
+    "assumptions_challenged": ["Assumption that was questioned"],
+    "mental_models_applied": [
+      {
+        "model_name": "First Principles",
+        "application": "Breaking down to fundamentals"
+      }
+    ],
+    "creative_solutions": [
+      {
+        "solution": "Novel approach",
+        "rationale": "Why this works",
+        "unconventional_insight": "Surprising connection"
+      }
+    ],
+    "recommended_experiments": ["Test this approach"],
+    "summary": "Overview of creative solutions"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "agent_name": "Taskmaster Orchestrator",
+  "agent_id": "699c465de4f4977cc58d9621",
+  "description": "Coordinates all sub-agents by analyzing user intent, routing to appropriate intelligence domains, aggregating multi-format responses, and maintaining conversational continuity. Decides which sub-agents to activate per query.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "intent_analysis": "string",
+    "domains_activated": [
+      "string"
+    ],
+    "response_sections": [
+      {
+        "domain": "string",
+        "title": "string",
+        "content": "string"
+      }
+    ],
+    "proactive_suggestions": [
+      "string"
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "intent_analysis": "sample string",
+    "domains_activated": [
+      "sample string"
+    ],
+    "response_sections": [
+      {
+        "domain": "sample string",
+        "title": "sample string",
+        "content": "sample string"
+      }
+    ],
+    "proactive_suggestions": [
+      "sample string"
+    ],
+    "summary": "sample string"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "manager_agent_id": "699c465de4f4977cc58d9621",
+  "sub_agents": {
+    "strategic_planner": "699c462438754b2ac5e88a3a",
+    "knowledge_synthesizer": "699c462423f6c95dc50e8c8d",
+    "decision_analyst": "699c464938754b2ac5e88a6c",
+    "creative_solver": "699c4625889152efca4690d4"
+  },
+  "all_agent_ids": [
+    "699c462438754b2ac5e88a3a",
+    "699c462423f6c95dc50e8c8d",
+    "699c464938754b2ac5e88a6c",
+    "699c4625889152efca4690d4",
+    "699c465de4f4977cc58d9621"
+  ]
+}
