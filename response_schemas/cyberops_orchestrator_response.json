@@ -1,7 +1,7 @@
 {
-  "agent_name": "Taskmaster Orchestrator",
-  "agent_id": "699c465de4f4977cc58d9621",
-  "description": "Coordinates all sub-agents by analyzing user intent, routing to appropriate intelligence domains, aggregating multi-format responses, and maintaining conversational continuity. Decides which sub-agents to activate per query.",
+  "agent_name": "CyberOps Orchestrator",
+  "agent_id": "699c4c16f05bb8fda3a4fe68",
+  "description": "Master coordinator for the White Hat Hacker Taskmaster AI. Analyzes cybersecurity queries, routes to appropriate specialist agents (Threat Intel, Pentest Strategy, Defense Architecture, Vulnerability Research), and aggregates multi-domain security intelligence into unified actionable reports.",
   "agent_type": "json",
   "accessor": "result",
   "auto_generated": true,
@@ -20,7 +20,8 @@
     "proactive_suggestions": [
       "string"
     ],
-    "summary": "string"
+    "summary": "string",
+    "risk_level": "string"
   },
   "example_response": {
     "intent_analysis": "sample string",
@@ -37,6 +38,7 @@
     "proactive_suggestions": [
       "sample string"
     ],
-    "summary": "sample string"
+    "summary": "sample string",
+    "risk_level": "sample string"
   }
 }

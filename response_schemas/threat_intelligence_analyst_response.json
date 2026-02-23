@@ -1,0 +1,31 @@
+{
+  "agent_name": "Threat Intelligence Analyst",
+  "agent_id": "699c4bedf05bb8fda3a4fe5e",
+  "description": "Specializes in OSINT, threat landscape analysis, CVE research, APT group tracking, IoC analysis, and real-time cyber threat monitoring.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "executive_summary": "string",
+    "threat_category": "string",
+    "severity_level": "string",
+    "threat_details": "string",
+    "iocs": [
+      {
+        "type": "string",
+        "value": "string",
+        "context": "string"
+      }
+    ],
+    "mitre_attack_mapping": [
+      {
+        "tactic": "string",
+        "technique": "string",
+        "technique_id": "string"
+      }
+    ],
+    "affected_systems": ["string"],
+    "recommendations": ["string"],
+    "sources": ["string"]
+  }
+}

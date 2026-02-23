@@ -1,0 +1,30 @@
+{
+  "agent_name": "Penetration Testing Strategist",
+  "agent_id": "699c4bede4f4977cc58d9975",
+  "description": "Designs ethical penetration testing strategies, attack surface analysis, methodology planning for authorized security assessments.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "scope_analysis": "string",
+    "testing_phases": [
+      {
+        "phase_name": "string",
+        "description": "string",
+        "tools": ["string"],
+        "techniques": ["string"]
+      }
+    ],
+    "attack_vectors": [
+      {
+        "vector": "string",
+        "severity": "string",
+        "description": "string",
+        "remediation": "string"
+      }
+    ],
+    "framework_references": ["string"],
+    "rules_of_engagement": ["string"],
+    "summary": "string"
+  }
+}

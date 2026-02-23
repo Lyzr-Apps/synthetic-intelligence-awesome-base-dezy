@@ -1,57 +1,82 @@
 {
-  "nodes": [
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "Security Query", "nodeCategory": "input"},
+      {"id": "manager_agent", "type": "Agent", "label": "CyberOps Orchestrator", "nodeCategory": "agent"},
+      {"id": "threat_intel", "type": "Agent", "label": "Threat Intelligence Analyst", "nodeCategory": "agent"},
+      {"id": "pentest_strategist", "type": "Agent", "label": "Penetration Testing Strategist", "nodeCategory": "agent"},
+      {"id": "defense_architect", "type": "Agent", "label": "Defense & Hardening Architect", "nodeCategory": "agent"},
+      {"id": "vuln_researcher", "type": "Agent", "label": "Vulnerability Research Analyst", "nodeCategory": "agent"},
+      {"id": "output_node", "type": "Output", "label": "Security Assessment", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "manager_agent"},
+      {"source": "manager_agent", "target": "threat_intel"},
+      {"source": "manager_agent", "target": "pentest_strategist"},
+      {"source": "manager_agent", "target": "defense_architect"},
+      {"source": "manager_agent", "target": "vuln_researcher"},
+      {"source": "threat_intel", "target": "output_node"},
+      {"source": "pentest_strategist", "target": "output_node"},
+      {"source": "defense_architect", "target": "output_node"},
+      {"source": "vuln_researcher", "target": "output_node"}
+    ]
+  },
+  "agents": [
     {
-      "id": "input_node",
-      "type": "Input",
-      "label": "User Message",
-      "nodeCategory": "input"
+      "node_id": "manager_agent",
+      "agent_id": "699c4c16f05bb8fda3a4fe68",
+      "name": "CyberOps Orchestrator",
+      "type": "manager",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.4,
+      "top_p": 0.95,
+      "managed_agents": [
+        "699c4bedf05bb8fda3a4fe5e",
+        "699c4bede4f4977cc58d9975",
+        "699c4c00e4f4977cc58d9977",
+        "699c4bee3cd6d5c8e728bd5c"
+      ]
     },
     {
-      "id": "manager_agent",
-      "type": "Agent",
-      "label": "Taskmaster Orchestrator",
-      "nodeCategory": "agent"
+      "node_id": "threat_intel",
+      "agent_id": "699c4bedf05bb8fda3a4fe5e",
+      "name": "Threat Intelligence Analyst",
+      "type": "sub-agent",
+      "provider": "Perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.3,
+      "top_p": 1
     },
     {
-      "id": "strategic_planner",
-      "type": "Agent",
-      "label": "Strategic Planner Agent",
-      "nodeCategory": "agent"
+      "node_id": "pentest_strategist",
+      "agent_id": "699c4bede4f4977cc58d9975",
+      "name": "Penetration Testing Strategist",
+      "type": "sub-agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.4,
+      "top_p": 0.95
     },
     {
-      "id": "knowledge_synthesizer",
-      "type": "Agent",
-      "label": "Knowledge Synthesizer Agent",
-      "nodeCategory": "agent"
+      "node_id": "defense_architect",
+      "agent_id": "699c4c00e4f4977cc58d9977",
+      "name": "Defense & Hardening Architect",
+      "type": "sub-agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "top_p": 1
     },
     {
-      "id": "decision_analyst",
-      "type": "Agent",
-      "label": "Decision Analyst Agent",
-      "nodeCategory": "agent"
-    },
-    {
-      "id": "creative_solver",
-      "type": "Agent",
-      "label": "Creative Problem Solver Agent",
-      "nodeCategory": "agent"
-    },
-    {
-      "id": "output_node",
-      "type": "Output",
-      "label": "Unified Response",
-      "nodeCategory": "end"
+      "node_id": "vuln_researcher",
+      "agent_id": "699c4bee3cd6d5c8e728bd5c",
+      "name": "Vulnerability Research Analyst",
+      "type": "sub-agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "top_p": 0.95
     }
-  ],
-  "edges": [
-    { "source": "input_node", "target": "manager_agent" },
-    { "source": "manager_agent", "target": "strategic_planner" },
-    { "source": "manager_agent", "target": "knowledge_synthesizer" },
-    { "source": "manager_agent", "target": "decision_analyst" },
-    { "source": "manager_agent", "target": "creative_solver" },
-    { "source": "strategic_planner", "target": "output_node" },
-    { "source": "knowledge_synthesizer", "target": "output_node" },
-    { "source": "decision_analyst", "target": "output_node" },
-    { "source": "creative_solver", "target": "output_node" }
   ]
 }

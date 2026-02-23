@@ -1,0 +1,36 @@
+{
+  "agent_name": "Defense & Hardening Architect",
+  "agent_id": "699c4c00e4f4977cc58d9977",
+  "description": "Designs security architectures, system hardening guides, incident response plans, compliance frameworks, zero-trust architectures, and security monitoring strategies.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "security_assessment": "string",
+    "architecture_design": "string",
+    "hardening_steps": [
+      {
+        "area": "string",
+        "action": "string",
+        "priority": "string",
+        "benchmark_reference": "string"
+      }
+    ],
+    "compliance_mapping": [
+      {
+        "framework": "string",
+        "control": "string",
+        "status": "string"
+      }
+    ],
+    "incident_response": "string",
+    "implementation_roadmap": [
+      {
+        "phase": "string",
+        "actions": ["string"],
+        "timeline": "string"
+      }
+    ],
+    "summary": "string"
+  }
+}

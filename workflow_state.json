@@ -1,16 +1,16 @@
 {
-  "manager_agent_id": "699c465de4f4977cc58d9621",
+  "manager_agent_id": "699c4c16f05bb8fda3a4fe68",
   "sub_agents": {
-    "strategic_planner": "699c462438754b2ac5e88a3a",
-    "knowledge_synthesizer": "699c462423f6c95dc50e8c8d",
-    "decision_analyst": "699c464938754b2ac5e88a6c",
-    "creative_solver": "699c4625889152efca4690d4"
+    "threat_intel": "699c4bedf05bb8fda3a4fe5e",
+    "pentest_strategist": "699c4bede4f4977cc58d9975",
+    "defense_architect": "699c4c00e4f4977cc58d9977",
+    "vuln_researcher": "699c4bee3cd6d5c8e728bd5c"
   },
   "all_agent_ids": [
-    "699c462438754b2ac5e88a3a",
-    "699c462423f6c95dc50e8c8d",
-    "699c464938754b2ac5e88a6c",
-    "699c4625889152efca4690d4",
-    "699c465de4f4977cc58d9621"
+    "699c4c16f05bb8fda3a4fe68",
+    "699c4bedf05bb8fda3a4fe5e",
+    "699c4bede4f4977cc58d9975",
+    "699c4c00e4f4977cc58d9977",
+    "699c4bee3cd6d5c8e728bd5c"
   ]
 }
